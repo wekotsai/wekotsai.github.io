@@ -62,29 +62,69 @@ li {
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 10px;
-  border: 2px solid white;
+  border: 2px solid rgba(202, 228, 225, 0.98);
   border-radius: 12px;
   font-size: 15px;
-  color: #35375d;
+  color: skyblue;
   font-style: bold;    
   word-wrap: break-word;
-    
+  background-color:rgba(26, 32, 32, 0.7);
+	
+	
+}
 
- background:
-linear-gradient(
-    limegreen,
-    transparent
-),
-linear-gradient(
-    90deg,
-    skyblue,
-    transparent
-),
-linear-gradient(
-    -90deg,
-    coral,
-    transparent
-);
+/*-- Base Styles --*/
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
 
-background-blend-mode: screen;deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Impact, Charcoal, sans-serif
+  font-size: 1rem;
+  background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #232429;
+}
+
+/*-- Sign Styles --*/
+.sign {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign__word {
+  font-size: 5.6rem;
+  text-align: center;
+  line-height: 1;
+  color: #f7f2f6;
+  -webkit-animation: neon .08s ease-in-out infinite alternate;
+          animation: neon .08s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes --*/
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(218, 180, 223, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+  }
+}
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px #1e84f2;
+  }
 }

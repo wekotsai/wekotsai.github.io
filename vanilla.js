@@ -31,7 +31,7 @@ function printBooks(myBooks) {
                      <li><p>Title: ${book.title}</p></li>
                      <li><p>Description: ${book.description}</p></li>
                      <li><p>Language: ${book.language}</p></li>
-                     <li><p class="imglist"><a href="${book.detail}" data-fancybox="images">More details...</a></p></li>
+                     <li><p class="imglist"><a href="${book.detail}" data-fancybox="images">Zoom in</a></p></li>
                    </ul>
                 </div>
             </div>
