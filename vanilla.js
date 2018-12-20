@@ -83,3 +83,4 @@ $('[data-fancybox="images"]').fancybox({
         }
     }
 });
+
