@@ -7,6 +7,10 @@ h2 {
     font-size: 45px;
 }
 
+a {
+    color: aliceblue;
+}
+
 li {
     list-style: none;
 }
