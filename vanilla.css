@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: floralwhite;
 }
 
 h2 {
@@ -32,7 +32,7 @@ li {
     border-radius: 10px;
 }
 
-#gallery{
+#books{
     display: flex;
     justify-content: center;
     justify-content: space-around;
@@ -62,13 +62,14 @@ li {
   transform: rotateY(180deg);
   box-sizing: border-box;
   padding: 10px;
+  border: 2px solid white;
   border-radius: 12px;
   font-size: 15px;
   color: #35375d;
   font-style: bold;    
   word-wrap: break-word;
     
-    
-background-color: #f8b09d;
+
+background-color: #84deec;
 background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
 }
