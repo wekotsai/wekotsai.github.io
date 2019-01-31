@@ -10,6 +10,7 @@
 html,body{
   height:100%
 }
+
 body {
   background: linear-gradient(to top, #a0f7ea 0%, #f2a9e1 100%);
   height: 100%;
@@ -17,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .logo {
   text-align: center;
   width: 65%;
@@ -28,14 +30,17 @@ body {
   right: 0;
   bottom: 0;
 }
+
 .logo b{
   font: 100 15vh "Vibur";
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
 }
+
 .logo b span{
   animation: blink linear infinite 2s;
 }
+
 .logo c{
   font: 100 7vh "Vibur";
   color: #fee;
