@@ -1,5 +1,3 @@
-/* @import url(//fonts.googleapis.com/css?family=Vibur); */
-
 @font-face {
   font-family: 'Vibur';
   font-style: normal;
@@ -7,8 +5,8 @@
   src: local('Vibur'), url(http://themes.googleusercontent.com/static/fonts/vibur/v4/mMNc4QI0HbuWMFrrJRZtag.ttf) format('truetype');
 }
 
-html,body{
-  height:100%
+html, body{
+  height: 100%
 }
 
 body {
@@ -86,10 +84,6 @@ a {
   }
 }
 
-.videoContainer {
-  margin-top: 500px;
-}
-
 .btn {
   background: none;
   border: 2px solid;
@@ -134,40 +128,57 @@ a {
   }
 }
 
-/*video home page*/
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
+/*home navbar*/
+header {
   position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-.video-foreground,
-.video-background iframe {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
+  background: rgba(	239,	151,	219, 0.3);
+  z-index: 1000;
 }
-#vidtop-content {
-	top: 0;
-	color: #fff;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
-.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
-.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+@media all and (min-width: 545px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+nav ul li {
+  display: none;
 }
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
+@media all and (min-width: 545px) {
+  nav ul li {
+    display: block;
+  }
 }
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
+nav ul a {
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 1em;
+  padding: 2em 2em;
+  text-transform: inherit;
+  transition: color 1s;
+  font: 30 5vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
 }
+nav ul a:hover {
+  -webkit-animation: pulse 1s ease-in infinite;
+          animation: pulse 1s ease-in infinite;
+  /* background: radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0 0/1em 1em, radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0.5em 0.5em/2em 2em; */
+  color: #0bdcb7;
+}
+@media all and (min-width: 545px) {
+  nav ul a {
+    padding: 10px;
+  }
+ 
+}
+
