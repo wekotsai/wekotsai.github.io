@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color:inherit;
+  color: inherit;
   text-decoration: none;
  }
 
@@ -85,6 +85,7 @@ a {
 }
 
 .btn {
+  margin: auto;
   background: none;
   border: 2px solid;
   border-bottom-width: 4px;
@@ -191,138 +192,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ======== NAVIGATION ======== */
-
-#logo-container {
-  position: fixed;
-  left: 0.4em;
-}
-
-#logo-container a {
-  display: block;
-  font-size: 1.4em;
-  padding: 0.5em 0.5em 0.3em;
-  color: #707070;
-}
-
-#menu-toggle {
-  user-select: none;
-}
-
-#menu {
-  display: flex;
-}
-
-#menu li {
-  list-style: none;
-}
-
-
-@media screen and (max-width: 767px) {  
-  #menu-toggle {
-    position: fixed;
-    display: block;
-    right: 0.8em;
-  }
-  
-  #menu-toggle > input {
-    position: absolute;
-    right: 0em;
-    top: 0em;
-    width: 2.9em;
-    height: 2.9em;
-    cursor: pointer;
-    opacity: 0.0; /* Hide the checkbox */
-    z-index: 3; /* and place it over the hamburger spans */
-    -webkit-touch-callout: none;
-  }
-  
-  #menu-toggle span {
-    position: relative;
-    display: block;
-    top: 7px;
-    width: 36px;
-    height: 1px;
-    margin-bottom: 12px;
-    border-radius: 0.1em;
-    background: #707070;
-    transform-origin: 0px 0px;
-    z-index: 2;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
-  }
-  
-  /* Rotate the top hamburger span clockwise */
-  #menu-toggle input:checked ~ span:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  
-  /* Hide the middle hamburger span */
-  #menu-toggle input:checked ~ span:nth-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-  
-  /* Rotate the bottom hamburger span anti-clockwise */
-  #menu-toggle input:checked ~ span:nth-child(4) {
-    transform: rotate(-45deg);
-  }
-
-  #menu {
-    position: fixed;
-    top: 3.1em;
-    height: 100vh;
-    width: 60vw;
-    right: -60vw; /* Hide the mobile menu on the right */
-    flex-direction: column;
-    padding-top: 0.5em;
-    padding-left: 1.5em;
-    background: #ffffff;
-    -webkit-font-smoothing: antialiased;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  }
-  
-  #menu-toggle input:checked ~ #menu {
-    /* Slide the mobile menu from right to left */
-    transform: translate(-60vw, 0); 
-  }
-  
-  #menu li {
-    padding: 1em 0;
-    -webkit-tap-highlight-color: transparent;
-  }
-  
-  #menu a {
-    font-size: 1.3em;
-  }  
-}
-
-
-@media screen and (min-width: 768px) {
-  nav {
-    justify-content: center;
-  }
-  
-  #logo-container {
-    left: 1.2em;
-  }
-  
-  #logo-container a {
-    padding-top: 0.4em;
-  }
-    
-  #menu-toggle > input, #menu-toggle > span {
-    display: none;
-  }
-  
-  #menu > li {
-    margin-top: 0.2em;
-    padding: 0.5em 1em;
-  }
-}
-
-
 /* ======== MAIN ======== */
 main {
   transition: all 0.4s ease-out;
@@ -368,7 +237,6 @@ article {
   }
 }
 
-/* Medium Devices, Desktops */
 @media screen and (min-width: 992px) {
   .img-front-end-portfolio {
     width: 70%;
