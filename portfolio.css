@@ -44,7 +44,7 @@ a {
   animation: blink linear infinite 2s;
 }
 
-.logo c, h2{
+h2{
   font: 100 7vh "Vibur";
   color: #fee;
   margin-bottom: 50px;
