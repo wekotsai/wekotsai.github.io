@@ -44,6 +44,17 @@ a {
   animation: blink linear infinite 2s;
 }
 
+.logo c{
+  font: 60 9vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
+  margin-bottom: 100px;
+}
+
+.logo c span{
+  animation: blink linear infinite 2s;
+}
+
 h2{
   font: 100 7vh "Vibur";
   color: #fee;
@@ -56,7 +67,7 @@ h2{
     color: inherit;
     text-shadow: inherit;
   }
-  79%{
+  79% {
      color: #f2a9e1;
   }
   80% {
