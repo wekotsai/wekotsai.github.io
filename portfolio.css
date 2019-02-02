@@ -44,7 +44,7 @@ a {
   animation: blink linear infinite 2s;
 }
 
-.logo c{
+.logo c, h2{
   font: 100 7vh "Vibur";
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
@@ -182,3 +182,327 @@ nav ul a:hover {
  
 }
 
+/* ======== PORTFOLIO ======== */
+
+body {
+  font-family: 'Raleway', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  /* hide menu overflow */
+  overflow-x: hidden;
+}
+
+/* ======== NAVIGATION ======== */
+
+#logo-container {
+  position: fixed;
+  left: 0.4em;
+}
+
+#logo-container a {
+  display: block;
+  font-size: 1.4em;
+  padding: 0.5em 0.5em 0.3em;
+  color: #707070;
+}
+
+#menu-toggle {
+  user-select: none;
+}
+
+#menu {
+  display: flex;
+}
+
+#menu li {
+  list-style: none;
+}
+
+
+@media screen and (max-width: 767px) {  
+  #menu-toggle {
+    position: fixed;
+    display: block;
+    right: 0.8em;
+  }
+  
+  #menu-toggle > input {
+    position: absolute;
+    right: 0em;
+    top: 0em;
+    width: 2.9em;
+    height: 2.9em;
+    cursor: pointer;
+    opacity: 0.0; /* Hide the checkbox */
+    z-index: 3; /* and place it over the hamburger spans */
+    -webkit-touch-callout: none;
+  }
+  
+  #menu-toggle span {
+    position: relative;
+    display: block;
+    top: 7px;
+    width: 36px;
+    height: 1px;
+    margin-bottom: 12px;
+    border-radius: 0.1em;
+    background: #707070;
+    transform-origin: 0px 0px;
+    z-index: 2;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  /* Rotate the top hamburger span clockwise */
+  #menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  /* Hide the middle hamburger span */
+  #menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /* Rotate the bottom hamburger span anti-clockwise */
+  #menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg);
+  }
+
+  #menu {
+    position: fixed;
+    top: 3.1em;
+    height: 100vh;
+    width: 60vw;
+    right: -60vw; /* Hide the mobile menu on the right */
+    flex-direction: column;
+    padding-top: 0.5em;
+    padding-left: 1.5em;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu-toggle input:checked ~ #menu {
+    /* Slide the mobile menu from right to left */
+    transform: translate(-60vw, 0); 
+  }
+  
+  #menu li {
+    padding: 1em 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  #menu a {
+    font-size: 1.3em;
+  }  
+}
+
+
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+  
+  #logo-container {
+    left: 1.2em;
+  }
+  
+  #logo-container a {
+    padding-top: 0.4em;
+  }
+    
+  #menu-toggle > input, #menu-toggle > span {
+    display: none;
+  }
+  
+  #menu > li {
+    margin-top: 0.2em;
+    padding: 0.5em 1em;
+  }
+}
+
+
+/* ======== MAIN ======== */
+main {
+  transition: all 0.4s ease-out;
+}
+
+.dark {
+  filter: brightness(50%);
+  background: #eee;
+}
+
+
+/* ======== MY WORK ======== */
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ======== MY WORK: FRONT-END ======== */
+#front-end-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6em;
+}
+
+.img-front-end-portfolio {
+  margin-bottom: 5em;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-front-end-portfolio {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img-front-end-portfolio {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (min-width: 992px) {
+  .img-front-end-portfolio {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .img-front-end-portfolio {
+    width: 60%;
+    height: auto;
+  }
+}
+
+
+/* ======== MY WORK: BACK-END ======== */
+#back-end-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6em;
+}
+
+.one-tile {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 500px) {
+  .one-tile {
+  width: 50%;
+  }
+}
+
+.one-tile:hover .img-back-end-portfolio {
+  transform: scale(1.1);
+  filter: brightness(30%);
+}
+
+.img-back-end-portfolio {
+  /* Prevent white space under image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  /* Prevent background from showing up on edges when */
+  /* hovering between images */
+  transform: scale(1.01); 
+  transition: all 300ms ease-out;
+}
+
+.one-tile:hover h3 {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 300ms ease-out 0ms;
+}
+
+.one-tile:hover p {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: all 300ms ease-out 200ms;
+}
+
+figcaption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+figcaption h3 {
+  padding-bottom: 0.5em;
+  transform: translateY(50%);
+  color: #ffffff;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 100ms ease-out 0ms;
+}
+
+figcaption p {
+  transform: translateY(50%);
+  color: #ffffff;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all 100ms ease-out 0ms;
+}
+
+
+/* ======== CONTACT ======== */
+#contact {
+  padding-top: 9em;
+  height: 100vh;
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 2em;
+  color: #303030;
+}
+#contact p {
+  margin-bottom: 0.7em;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+#contact .fa {
+  padding-right: 0.8em;
+  font-size: 1.3em;
+}
+
+
+/* ======== Back to top button ======== */
+#back-to-top {
+	display: block;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 10px;
+	bottom: 10px;
+	background: #bfbfbf url('http://www.mapaplan.com/external-assets/fcc-portfolio/img/up-arrow.png') no-repeat center 43%;
+  opacity: 0;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+  transition: opacity 1.55s ease;
+  cursor: pointer;
+}
+#back-to-top:hover {
+	background: #707070 url('http://www.mapaplan.com/external-assets/fcc-portfolio/img/up-arrow.png') no-repeat center 43%;
+}
