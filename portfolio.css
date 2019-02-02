@@ -44,7 +44,7 @@ a {
   animation: blink linear infinite 2s;
 }
 
-h2{
+.logo c, h2{
   font: 100 7vh "Vibur";
   color: #fee;
   margin-bottom: 50px;
@@ -184,7 +184,6 @@ nav ul a:hover {
 }
 
 /*  PORTFOLIO  */
-
 body {
   font-family: 'Raleway', Arial, sans-serif;
   letter-spacing: 0.1em;
