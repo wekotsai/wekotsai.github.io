@@ -44,9 +44,10 @@ a {
   animation: blink linear infinite 2s;
 }
 
-.logo c, h2{
+h2{
   font: 100 7vh "Vibur";
   color: #fee;
+  margin-bottom: 50px;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
 }
 
@@ -129,7 +130,7 @@ a {
   }
 }
 
-/*home navbar*/
+/*  HOME NAVBAR  */
 header {
   position: fixed;
   top: 0;
@@ -173,7 +174,6 @@ nav ul a {
 nav ul a:hover {
   -webkit-animation: pulse 1s ease-in infinite;
           animation: pulse 1s ease-in infinite;
-  /* background: radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0 0/1em 1em, radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0.5em 0.5em/2em 2em; */
   color: #0bdcb7;
 }
 @media all and (min-width: 375px) {
@@ -183,7 +183,7 @@ nav ul a:hover {
  
 }
 
-/* ======== PORTFOLIO ======== */
+/*  PORTFOLIO  */
 
 body {
   font-family: 'Raleway', Arial, sans-serif;
@@ -192,7 +192,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ======== MAIN ======== */
+/*  MAIN  */
 main {
   transition: all 0.4s ease-out;
 }
@@ -203,7 +203,7 @@ main {
 }
 
 
-/* ======== MY WORK ======== */
+/*  MY WORK  */
 article {
   display: flex;
   flex-direction: column;
@@ -255,8 +255,7 @@ article {
 /* ======== MY WORK: BACK-END ======== */
 #back-end-portfolio {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 6em;
@@ -330,28 +329,6 @@ figcaption p {
   opacity: 0;
   transition: all 100ms ease-out 0ms;
 }
-
-
-/* ======== CONTACT ======== */
-#contact {
-  padding-top: 9em;
-  height: 100vh;
-  text-align: center;
-}
-#contact h2 {
-  margin-bottom: 2em;
-  color: #303030;
-}
-#contact p {
-  margin-bottom: 0.7em;
-  font-size: 0.9em;
-  line-height: 2em;
-}
-#contact .fa {
-  padding-right: 0.8em;
-  font-size: 1.3em;
-}
-
 
 /* ======== Back to top button ======== */
 #back-to-top {
