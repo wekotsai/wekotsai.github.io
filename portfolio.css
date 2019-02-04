@@ -228,7 +228,7 @@ article {
 
 .img-front-end-portfolio {
   margin-bottom: 5em;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -260,7 +260,6 @@ article {
   }
 }
 
-
 /* ======== MY WORK: BACK-END ======== */
 #back-end-portfolio {
   display: flex;
@@ -278,7 +277,7 @@ article {
 
 @media screen and (min-width: 500px) {
   .one-tile {
-  width: 50%;
+  width: 60%;
   }
 }
 
@@ -298,7 +297,6 @@ article {
   /* hovering between images */
   transform: scale(1.01); 
   transition: all 300ms ease-out;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
 }
 
 .one-tile:hover h3 {
