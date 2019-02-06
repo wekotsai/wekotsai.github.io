@@ -1,23 +1,15 @@
 @font-face {
-  font-family: 'Vibur';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Vibur'), url(http://themes.googleusercontent.com/static/fonts/vibur/v4/mMNc4QI0HbuWMFrrJRZtag.ttf) format('truetype');
-}
-
-html, body{
-  height: 100%
-}
+    font-family: 'Vibur';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Vibur'), url(http://themes.googleusercontent.com/static/fonts/vibur/v4/mMNc4QI0HbuWMFrrJRZtag.ttf) format('truetype');
+  }
 
 body {
-  background: linear-gradient(to top, #a0f7ea 0%, #f2a9e1 100%);
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    background-color: rgb(253, 244, 244);
+  }
 
-a {
+  a {
   color: inherit;
   text-decoration: none;
  }
@@ -151,7 +143,7 @@ header {
   z-index: 1000;
 }
 
-nav ul {
+/* nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -179,20 +171,20 @@ nav ul a {
   text-transform: inherit;
   transition: color 1s;
   font: 30 5vh "Vibur";
-  color: #fee !important;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
 }
 nav ul a:hover {
-  -webkit-animation: pulse 1s ease-in infinite !important;
-          animation: pulse 1s ease-in infinite !important;
-  color: #0bdcb7 !important;
+  -webkit-animation: pulse 1s ease-in infinite;
+          animation: pulse 1s ease-in infinite;
+  color: #0bdcb7;
 }
 @media all and (min-width: 375px) {
   nav ul a {
     padding: 10px;
   }
  
-}
+} */
 
 /*  PORTFOLIO  */
 body {

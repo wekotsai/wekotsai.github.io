@@ -5,6 +5,7 @@
     <title>home</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Vibur" />
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,31 +16,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-        <header>
+   
+        <nav class="navbar navbar-expand-sm navbar-light justify-content-between" style="background-color: #f2a9e1 85%;">
+          <div class="container-fluid">  
+             <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Blog<i class="fa fa-pencil" style="font-size:32px"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Videos<i class="fa fa-youtube" style="font-size:32px"></i></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Github<i class="fa fa-github" style="font-size:36px"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact<i class="fa fa-paper-plane" style="font-size:32px"></i></a>
+                          </li>
+                    </ul>
+                  </div>
+              </div>    
+        </nav>  
+    
+        <!-- <header>
                 <nav role='navigation'>
                   <ul>
                     <li><a href="#"><i class="fa fa-heart" style="font-size:32px"></i></a></li>
                     <li><a href="https://theultrabright.com/"><i class="fa fa-pencil" style="font-size:32px"></i></a></li>
                     <li><a href="https://www.youtube.com/user/wekoofficial"><i class="fa fa-youtube" style="font-size:32px"></i></a></li>
-                    <li><a href="https://github.com/wekotsai"><i class="fa fa-github" style="font-size:36px"></i></i></a></li>
+                    <li><a href="https://github.com/wekotsai"><i class="fa fa-github" style="font-size:36px"></i></a></li>
                     <li><a href="mailto:wekotsai@gmail.com"><i class="fa fa-envelope" style="font-size:32px"></i></a></li>
                   </ul>
                 </nav>
-        </header>
+        </header> -->
     
 <!-- ======== MY WORK ======== -->
   <article id="my-work"> 
         <section id="front-end-portfolio">
           <div class="logo"><c>P<span>O</span>R<span>T</span>F<span>O</span>L<span>I</span>O</c></div>
         </section> 
-        <section id="front-end-portfolio">
-        </section> 
 <!-- ======== WEB DEVELOPER ======== -->   
         <section id="back-end-portfolio">
           
            <h2>Web Development</h2>
-           <figure class="one-tile">
-              <img class="img-back-end-portfolio" src="bookstore" alt="bookstore">
+           <!-- <figure class="one-tile">
+              <img class="img-back-end-portfolio" src="bookstore.png" alt="bookstore">
                 <figcaption>
                   <h3>Bookstore</h3>
                   <p>Vue.js</p>
@@ -52,7 +80,12 @@
                   <h3>TGIF</h3>
                   <p>API development</p>
                 </figcaption>
-            </figure>
+            </figure> -->
+
+            <section id="front-end-portfolio">
+                    <img class="img-front-end-portfolio" src="bookstore1.png" alt="bookstore">
+                    <img class="img-front-end-portfolio" src="tgif1.png" alt="tgif">
+              </section> 
       
       </section>
 <!-- ======== SPA ======== -->
