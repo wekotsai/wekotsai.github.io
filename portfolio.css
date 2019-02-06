@@ -187,6 +187,8 @@ nav ul a:hover {
           animation: pulse 1s ease-in infinite !important;
   color: #0bdcb7 !important;
 }
+
+
 @media all and (min-width: 375px) {
   nav ul a {
     padding: 10px;
@@ -226,7 +228,7 @@ article {
   padding-top: 6em;
 }
 
-.img-front-end-portfolio {
+.img-aboutme, .img-front-end-portfolio {
   margin-bottom: 5em;
   width: 80%;
   height: auto;
