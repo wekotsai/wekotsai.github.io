@@ -255,13 +255,6 @@ article {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .img-front-end-portfolio {
-    width: 60%;
-    height: auto;
-  }
-}
-
 /* ======== MY WORK: BACK-END ======== */
 #back-end-portfolio {
   display: flex;
