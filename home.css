@@ -48,9 +48,9 @@ body {
 }
 
 h2{
-  font: 100 5vw "Vibur";
+  font: 72 6vw "Vibur";
   color: #fee;
-  margin-bottom: 50px; 
+  /* margin-bottom: 50px;  */
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px ; 
 }
 
@@ -58,6 +58,11 @@ h2:hover {
   -webkit-animation: pulse 1s ease-in infinite !important;
           animation: pulse 1s ease-in infinite !important;
   color: #0bdcb7 !important;
+}
+
+h3 { 
+ font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px;  
+ margin-bottom: 30px;
 }
 
 @keyframes blink {
@@ -218,13 +223,6 @@ article {
 @media screen and (min-width: 992px) {
   .img-front-end-portfolio {
     width: 70%;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .img-front-end-portfolio {
-    width: 60%;
     height: auto;
   }
 }
