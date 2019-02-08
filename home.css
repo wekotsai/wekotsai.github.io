@@ -36,14 +36,19 @@ body {
   animation: blink linear infinite 2s;
 }
 
-.logo c{
+.icon {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.icon c {
   font: 60 9vh "Vibur";
   color: #fee;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
-  margin-bottom: 100px;
 }
 
-.logo c span{
+.icon c span{
   animation: blink linear infinite 2s;
 }
 
@@ -54,15 +59,11 @@ h2{
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px ; 
 }
 
-h2:hover {
-  -webkit-animation: pulse 1s ease-in infinite !important;
-          animation: pulse 1s ease-in infinite !important;
-  color: #0bdcb7 !important;
-}
-
 h3 { 
- font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px;  
+ font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; 
+ font-size: 2vw;   
  margin-bottom: 30px;
+ color: #545b5b;
 }
 
 @keyframes blink {
@@ -74,7 +75,6 @@ h3 {
      color: #f2a9e1;
   }
   80% {
-    
     text-shadow: none;
   }
   81% {
