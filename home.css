@@ -6,7 +6,7 @@
   }
 
 body {
-    background-color: rgb(253, 244, 244);
+    background-color: whitesmoke;
   }
 
   a {
@@ -48,10 +48,16 @@ body {
 }
 
 h2{
-  font: 100 7vh "Vibur";
+  font: 100 5vw "Vibur";
   color: #fee;
-  margin-bottom: 50px;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
+  margin-bottom: 50px; 
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px ; 
+}
+
+h2:hover {
+  -webkit-animation: pulse 1s ease-in infinite !important;
+          animation: pulse 1s ease-in infinite !important;
+  color: #0bdcb7 !important;
 }
 
 @keyframes blink {
@@ -134,57 +140,28 @@ h2{
 }
 
 /*  HOME NAVBAR  */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* background: rgba(	239,	151,	219, 0.3); */
-  z-index: 1000;
-}
-
-/* nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-@media all and (min-width: 375px) {
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-nav ul li {
-  display: none;
-}
-@media all and (min-width: 375px) {
-  nav ul li {
-    display: block;
-  }
-}
 nav ul a {
   font: inherit;
   letter-spacing: inherit;
-  margin: 1em;
-  padding: 2em 2em;
+  margin: 5px;
+  padding: 2em 2em; 
   text-transform: inherit;
   transition: color 1s;
-  font: 30 5vh "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
+  font: 30 4vh "Vibur";
+  color: #fee !important;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
 }
 nav ul a:hover {
-  -webkit-animation: pulse 1s ease-in infinite;
-          animation: pulse 1s ease-in infinite;
-  color: #0bdcb7;
+  -webkit-animation: pulse 1s ease-in infinite !important;
+          animation: pulse 1s ease-in infinite !important;
+  color: #0bdcb7 !important;
 }
 @media all and (min-width: 375px) {
   nav ul a {
     padding: 10px;
   }
  
-} */
+}
 
 /*  PORTFOLIO  */
 body {

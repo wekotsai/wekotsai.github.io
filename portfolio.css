@@ -17,6 +17,8 @@ body {
   background-attachment: fixed;
 }
 
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -187,8 +189,6 @@ nav ul a:hover {
           animation: pulse 1s ease-in infinite !important;
   color: #0bdcb7 !important;
 }
-
-
 @media all and (min-width: 375px) {
   nav ul a {
     padding: 10px;
@@ -234,7 +234,7 @@ article {
   height: auto;
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .img-front-end-portfolio {
     width: 60%;
     height: auto;
@@ -253,7 +253,7 @@ article {
     width: 70%;
     height: auto;
   }
-} */
+}
 
 /* ======== MY WORK: BACK-END ======== */
 #back-end-portfolio {
