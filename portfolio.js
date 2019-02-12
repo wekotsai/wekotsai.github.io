@@ -65,23 +65,18 @@
     });
    
     
-    // ======== BACK TO TOP ANIMATION ======== //
-    const amountScrolled = 2500;
-    const backToTopButton = document.getElementById('back-to-top');
-    
-    // Show or hide 'back to top' arrow button
-    window.addEventListener('scroll', (event) => {
-      if (window.scrollY > amountScrolled) {
-        backToTopButton.style.opacity = '0.6';
-      } else {
-        backToTopButton.style.opacity = '0';
-      }
-    })
-  
-    // Scroll to target
-    backToTopButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      scrollTo(document.body, targetElements['my-work'].offsetTop, 400);
-    });
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+  }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+  }, 500);
+});
   
   }());

@@ -55,15 +55,21 @@ body {
 h2{
   font: 72 6vw "Vibur";
   color: #fee;
-  /* margin-bottom: 50px;  */
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px ; 
 }
 
 h3 { 
- font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; 
  font-size: 2vw;   
  margin-bottom: 30px;
  color: #545b5b;
+}
+
+h6 {
+  font-size: 2.5vw;  
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
 }
 
 @keyframes blink {
@@ -306,24 +312,45 @@ figcaption p {
   transition: all 100ms ease-out 0ms;
 }
 
-/* ======== Back to top button ======== */
-#back-to-top {
-	display: block;
-	width: 60px;
-	height: 60px;
-	text-indent: -9999px;
-	position: fixed;
-	z-index: 999;
-	right: 10px;
-	bottom: 10px;
-	background: #bfbfbf url('http://www.mapaplan.com/external-assets/fcc-portfolio/img/up-arrow.png') no-repeat center 43%;
-  opacity: 0;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-  transition: opacity 1.55s ease;
-  cursor: pointer;
+/* ======== BACK-TO-TOP ======== */
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-#back-to-top:hover {
-	background: #707070 url('http://www.mapaplan.com/external-assets/fcc-portfolio/img/up-arrow.png') no-repeat center 43%;
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
