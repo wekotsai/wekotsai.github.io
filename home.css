@@ -65,7 +65,7 @@ h3 {
 }
 
 h6 {
-  font-size: 2.5vw;  
+  font-size: 2.5vmin;  
   padding-top: 50px;
   padding-right: 100px;
   padding-bottom: 50px;
@@ -198,7 +198,7 @@ article {
   flex-direction: column;
 }
 
-/* ======== MY WORK: FRONT-END ======== */
+/* ======== MY WORK ======== */
 #front-end-portfolio {
   display: flex;
   flex-direction: column;
@@ -233,7 +233,6 @@ article {
   }
 }
 
-/* ======== MY WORK: BACK-END ======== */
 #back-end-portfolio {
   display: flex;
   flex-direction: column;
@@ -261,14 +260,11 @@ article {
 }
 
 .img-back-end-portfolio {
-  /* Prevent white space under image */
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: auto;
-  /* Prevent background from showing up on edges when */
-  /* hovering between images */
   transform: scale(1.01); 
   transition: all 300ms ease-out;
 }
