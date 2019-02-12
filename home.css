@@ -6,7 +6,7 @@
   }
 
 body {
-    background-color: whitesmoke;
+    background-color: rgb(253, 249, 249);
   }
 
   a {
@@ -44,8 +44,8 @@ body {
 
 .icon c {
   font: 60 9vh "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
+  color: #ffffff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
 
 .icon c span{
@@ -57,8 +57,8 @@ body {
 
 h2{
   font: 72 6vw "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px ; 
+  color: #ffff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
 
 h3 { 
@@ -121,9 +121,9 @@ h6 {
   text-transform: inherit;
   transition: color 1s;
   font: 50 5vh "Vibur";
-  color: #fee;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
-  box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
+  color: #ffffff;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  	#F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em;
+  box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em;
 }
 
 .btn-6:hover {
@@ -154,16 +154,20 @@ h6 {
 }
 
 /*  HOME NAVBAR  */
+.flex-fill {
+  flex:1;   
+}
+
 nav ul a {
   font: inherit;
   letter-spacing: inherit;
   margin: 5px;
-  padding: 2em 2em; 
+  /* padding: 2em 2em;  */
   text-transform: inherit;
   transition: color 1s;
-  font: 30 4vh "Vibur";
-  color: #fee !important;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
+  font: 30 3vh "Vibur";
+  color: #FDFDF9 !important;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
 }
 nav ul a:hover {
   -webkit-animation: pulse 1s ease-in infinite !important;
@@ -317,8 +321,8 @@ figcaption p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7);
+  background: lavender;
+  background: lavender;
   width: 50px;
   height: 50px;
   display: block;
@@ -347,7 +351,7 @@ figcaption p {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: #ff1adc;
 }
 #return-to-top:hover i {
   color: #fff;
