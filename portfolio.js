@@ -1,29 +1,4 @@
 (function() {
-  
-    // ======== HAMBURGER MENU ANIMATION ======== //
-    // Find the navigation hamburger button
-    const hamburgerElement = document.querySelectorAll('input[type=checkbox]')[0];
-  
-    // Find the DOM element that will get dark
-    const mainElement = document.getElementsByTagName('main')[0];
-  
-    // Navigation menu logic for click or touch events
-    ['click', 'touchstart'].forEach(predefinedEvent => {
-      document.body.addEventListener(predefinedEvent, (event) => {
-        
-        if (hamburgerElement.checked) {
-          mainElement.className = 'dark';
-          if (event.target.type !== 'checkbox') {
-            hamburgerElement.checked = false;
-            mainElement.className = '';
-          }
-        } else if (event.target.type === 'checkbox') {
-          mainElement.className = '';       
-        }
-  
-      }, false);
-    });
-    
     
     // ======== SCROLL ANIMATION ======== //
     // Recursive scroll function
