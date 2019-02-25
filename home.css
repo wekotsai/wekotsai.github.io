@@ -48,8 +48,7 @@ body {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
 
-.icon c span:hover{
-  animation: blink linear infinite 2s;
+.icon c span:hover {
   color: #0bdcb7 !important;
 }
  
@@ -81,7 +80,7 @@ body {
 }
 
 h2{
-  font: 72 6vw "Vibur";
+  font: 72 5vw "Vibur";
   color: #ffff;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
@@ -231,7 +230,7 @@ article {
 }
 
 /* ======== MY WORK ======== */
-#front-end-portfolio {
+#intro, #front-end-portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -346,8 +345,8 @@ figcaption p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #ff1adc;
-  background: #ff1adc;
+  background: mediumturquoise;
+  background: mediumturquoise;
   width: 50px;
   height: 50px;
   display: block;
@@ -376,7 +375,7 @@ figcaption p {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: #0bdcb7;
+  background: #F06BC8;
 }
 #return-to-top:hover i {
   color: #fff;
