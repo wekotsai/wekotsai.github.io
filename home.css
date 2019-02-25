@@ -6,8 +6,12 @@
   }
 
 body {
-    background-color: rgb(253, 249, 249);
+    background-color: white;
   }
+
+#intro {
+  background-color: rgb(253, 249, 249);
+}  
 
   a {
   color: inherit;
