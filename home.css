@@ -48,12 +48,37 @@ body {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
 
-.icon c span{
+.icon c span:hover{
   animation: blink linear infinite 2s;
+  color: #0bdcb7 !important;
+}
+ 
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #545b5b;
+  font-family: "Vibur";
+  font-size: 6vmin;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid turquoise; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-/*  HAMBURGER  */
- 
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: turquoise }
+}
 
 h2{
   font: 72 6vw "Vibur";
@@ -321,8 +346,8 @@ figcaption p {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: lavender;
-  background: lavender;
+  background: #ff1adc;
+  background: #ff1adc;
   width: 50px;
   height: 50px;
   display: block;
@@ -351,7 +376,7 @@ figcaption p {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: #ff1adc;
+  background: #0bdcb7;
 }
 #return-to-top:hover i {
   color: #fff;
