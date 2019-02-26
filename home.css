@@ -46,13 +46,17 @@ body {
   margin: auto;
 }
 
-.icon c {
+.icon b {
   font: 60 9vh "Vibur";
   color: #ffffff;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px !important;
 }
 
-.icon b {
+.icon b span a:hover {
+  color: #0bdcb7 !important;
+}
+
+.icon c {
   font: 60 9vh "Vibur";
   color: #ffffff;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
@@ -67,7 +71,7 @@ body {
   color: white;
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
   font-family: "Vibur";
-  font-size: 6vmin;
+  font-size: 7vmin;
   overflow: hidden; 
   border-right: .15em solid turquoise; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
