@@ -52,7 +52,7 @@ body {
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px !important;
 }
 
-.icon b span a:hover {
+.icon b span:hover {
   color: #0bdcb7 !important;
 }
 
@@ -69,10 +69,13 @@ body {
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: white;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
+  text-shadow: 0 0px 0px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
   font-family: "Vibur";
   font-size: 7vmin;
   overflow: hidden; 
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-right: .15em solid turquoise; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
