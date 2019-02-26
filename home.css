@@ -10,7 +10,7 @@ body {
   }
 
 #intro {
-  background-color: rgb(253, 249, 249);
+  background: linear-gradient(to top, #a0f7ea 0%, #f2a9e1 100%);
 }  
 
   a {
@@ -58,7 +58,8 @@ body {
  
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-  color: #545b5b;
+  color: white;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
   font-family: "Vibur";
   font-size: 6vmin;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -195,7 +196,7 @@ nav ul a {
   transition: color 1s;
   font: 30 3vh "Vibur";
   color: #FDFDF9 !important;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  	#F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em; !important;
 }
 nav ul a:hover {
   -webkit-animation: pulse 1s ease-in infinite !important;
