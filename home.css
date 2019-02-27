@@ -75,7 +75,7 @@ body {
   overflow: hidden; 
   padding-left: 10px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   border-right: .15em solid turquoise; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -204,13 +204,14 @@ nav ul a {
   font: inherit;
   letter-spacing: inherit;
   margin: 5px;
-  /* padding: 2em 2em;  */
+  padding: 2em 2em; 
   text-transform: inherit;
   transition: color 1s;
   font: 30 3vh "Vibur";
   color: #FDFDF9 !important;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  	#F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em; !important;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  	#F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
 }
+
 nav ul a:hover {
   -webkit-animation: pulse 1s ease-in infinite !important;
           animation: pulse 1s ease-in infinite !important;
