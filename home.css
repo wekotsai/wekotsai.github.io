@@ -65,7 +65,7 @@ body {
 .icon c span:hover {
   color: #0bdcb7 !important;
 }
- 
+
 .typewriter h1 {
   color: white;
   text-shadow: 0 0px 0px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
@@ -102,7 +102,7 @@ h2{
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em  #F06BC8, 0 10px 3px ; 
 }
 
-h3 { 
+h3, h6, footer { 
  font-size: 2vw;   
  margin-bottom: 30px;
  color: #545b5b;
