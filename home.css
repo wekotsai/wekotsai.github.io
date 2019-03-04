@@ -73,8 +73,8 @@ body {
   font-size: 8vmin;
   overflow: hidden; 
   padding-left: 10px;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 8px;
   border-right: .15em solid turquoise; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -195,37 +195,30 @@ h6 {
 }
 
 /*  HOME NAVBAR  */
-.flex-fill {
-  flex:1;   
-}
 
 nav ul a {
-  font: inherit;
   letter-spacing: inherit;
   margin: 5px;
-  padding: 2em 2em; 
-  text-transform: inherit;
-  transition: color 1s;
-  font: 30 3vh "Vibur";
-  color: #FDFDF9 !important;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  	#F06BC8, 0 0 0.5em #ff1adc, 0 0 0.1em !important;
+  font: 28 3vh sans-serif; 
+  color: rgb(252, 241, 241) !important;
 }
 
 nav ul a:hover {
   -webkit-animation: pulse 1s ease-in infinite !important;
           animation: pulse 1s ease-in infinite !important;
-  color: #0bdcb7 !important;
+  color: #ff1adc !important;
 }
 @media all and (min-width: 375px) {
   nav ul a {
     padding: 10px;
   }
- 
 }
+
+
 
 /*  PORTFOLIO  */
 body {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Geneva', Tahoma, Verdana, sans-serif;
   letter-spacing: 0.1em;
   /* hide menu overflow */
   overflow-x: hidden;
