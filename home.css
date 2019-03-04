@@ -11,9 +11,11 @@ body {
 
 #intro {
   background: linear-gradient(to top, #a0f7ea 0%, #f2a9e1 100%);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }  
 
-  a {
+a {
   color: inherit;
   text-decoration: none;
  }
@@ -194,26 +196,65 @@ h6 {
   }
 }
 
+
 /*  HOME NAVBAR  */
-
-nav ul a {
-  letter-spacing: inherit;
-  margin: 5px;
-  font: 28 3vh sans-serif; 
-  color: rgb(252, 241, 241) !important;
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+    border: none;
 }
 
-nav ul a:hover {
-  -webkit-animation: pulse 1s ease-in infinite !important;
-          animation: pulse 1s ease-in infinite !important;
-  color: #ff1adc !important;
-}
-@media all and (min-width: 375px) {
-  nav ul a {
-    padding: 10px;
-  }
+.navbar-toggler span {
+   display: block;
+   background-color: #fee !important;
+   height: 3px;
+   width: 25px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
 }
 
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}
 
 
 /*  PORTFOLIO  */
