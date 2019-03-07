@@ -80,7 +80,7 @@ a {
 }
 
 h1{
-    font: 100 5vh "Vibur";
+    font: 100 4vh "Vibur";
     color: #fee;
     margin-bottom: 50px;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
@@ -156,7 +156,7 @@ h6 {
   padding: 1em 2em;
   text-transform: inherit;
   transition: color 1s;
-  font: 50 4vh "Vibur" !important; 
+  font: 50 3.5vh "Vibur" !important; 
   color: #ffffff;
   text-shadow:  0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
   box-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em;
