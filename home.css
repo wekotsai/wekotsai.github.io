@@ -79,24 +79,6 @@ a {
   color: #0bdcb7 !important;
 }
 
-.typewriter h1 {
-  color: white;
-  text-shadow: 0 0px 0px, 0 0 2px, 0 0 1em  #FFDD1B, 0 0 0.5em #ff1adc, 0 0 0.1em  #FFDD1B, 0 10px 3px;
-  font-family: "Vibur";
-  font-size: 8vmin;
-  overflow: hidden; 
-  padding-left: 10px;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  border-right: .15em solid turquoise; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 5.0s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
