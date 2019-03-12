@@ -131,15 +131,15 @@ h4 {
     font-size: 18px; 
 }
 
+h6 {
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
 footer { 
     font-size: 15px;   
     margin-bottom: 30px;
     color: black;
-}
-
-#aboutMe {
-    padding-left: 6em;
-    padding-right: 6em;
 }
 
 #front-end-portfolio {
