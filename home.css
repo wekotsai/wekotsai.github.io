@@ -258,7 +258,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: turquoise;
+    background: #f537cc;
     width: 50px;
     height: 50px;
     display: block;
@@ -290,7 +290,7 @@ footer {
     background: #111;
   }
   #return-to-top:hover i {
-    color: turquoise;
+    color: #f537cc;
     top: 5px;
   }
 
