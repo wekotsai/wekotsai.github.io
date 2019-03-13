@@ -41,6 +41,18 @@ body {
 /*
 ** Apply common styles to each line of text
 */
+
+@media screen and (max-width: 600px) {
+  .Words-line {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
 .Words-line {
   height: 50px;
   overflow: hidden;
@@ -97,6 +109,8 @@ p {
   -webkit-transform: translate3d(0, -65px, 0);
           transform: translate3d(0, -65px, 0);
 }
+
+
 
 h1,h2,h3 {
     color: #060966;
