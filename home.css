@@ -116,6 +116,8 @@ h4 {
 
 h4 a {
     color: turquoise;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
 }
 
 h6 {
