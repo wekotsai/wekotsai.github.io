@@ -120,6 +120,12 @@ h4 a {
     text-decoration-style: wavy;
 }
 
+h4 a:hover {
+    color: #f537cc;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+
 h6 {
   padding-left: 3em;
   padding-right: 3em;
