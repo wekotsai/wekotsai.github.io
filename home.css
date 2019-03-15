@@ -11,9 +11,13 @@
   background-color: #111;
 }
 
-/* #web-dev{
-  background-color: rgba(245, 245, 245, 0.856)
-} */
+#web-dev{
+  background-color: rgba(245, 245, 245, 0.8)
+}
+
+#aboutMe{
+  background-color: rgba(245, 245, 245, 0.8)
+}
 
 .title {
   font-family: "Montserrat" !important;
