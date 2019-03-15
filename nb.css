@@ -16,11 +16,14 @@ body {
 
 #intro {
     background-color: #060966;
-    background-color: #060966;
     background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
     color: #fff;
     display: flex;
     height: 100%;
+}
+
+#aboutMe {
+    background-color: rgba(245, 245, 245, 0.7)
 }
   
 .Words {

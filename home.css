@@ -7,6 +7,10 @@
 * {margin:0;padding:0;border:0 none;position: relative; outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #intro {
   background-color: #111;
 }
