@@ -12,11 +12,11 @@
 }
 
 #web-dev{
-  background-color: rgba(245, 245, 245, 0.8)
+  background-color: rgba(245, 245, 245, 0.7)
 }
 
 #aboutMe{
-  background-color: rgba(245, 245, 245, 0.8)
+  background-color: rgba(245, 245, 245, 0.7)
 }
 
 .title {
@@ -121,7 +121,7 @@ h4 {
 h4 a {
     color: turquoise;
     text-decoration-line: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: solid;
 }
 
 h4 a:hover {
