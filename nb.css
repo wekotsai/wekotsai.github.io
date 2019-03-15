@@ -23,7 +23,7 @@ body {
 }
 
 #aboutMe {
-    background-color: rgba(245, 245, 245, 0.7)
+    background-color: rgba(245, 245, 245, 0.7);
 }
   
 .Words {
@@ -113,8 +113,6 @@ p {
           transform: translate3d(0, -65px, 0);
 }
 
-
-
 h1,h2,h3 {
     color: #060966;
 }
@@ -179,6 +177,11 @@ h1,h2,h3 {
        }
   }
   
+}
+
+h6 {
+  color: #060966;
+  font-size: 18px;
 }
 
 h4 {
