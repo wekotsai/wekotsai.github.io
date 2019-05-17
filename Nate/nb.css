@@ -14,18 +14,36 @@ body {
     overflow-x: hidden;
   }
 
-#intro {
-    background-color: #060966;
+#intro1 {
+    padding-top: 8em;
+    padding-bottom: 10em;
+    background-image: url("nate.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: black;
+    display: flex;
+    height: 100%;
+}
+
+#banner {
+    background-color: #111;
     background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
-    color: #fff;
     display: flex;
     height: 100%;
 }
 
 #aboutMe {
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgba(228, 230, 231, 0.7);
+    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
 }
   
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .Words {
   margin: 0 auto;
   padding: 80px 0;
@@ -114,7 +132,7 @@ p {
 }
 
 h1,h2,h3 {
-    color: #060966;
+    color: black;
 }
 
 @media screen and (min-width: 600px) {
@@ -126,7 +144,7 @@ h1,h2,h3 {
 
   li > a:before {
     content: "";
-    background: lavender;
+    background: rgb(226, 227, 228);
     position: absolute;
     width: 90%;
     height: 3px;
@@ -180,7 +198,7 @@ h1,h2,h3 {
 }
 
 h6 {
-  color: #060966;
+  color: black;
   font-size: 18px;
 }
 
@@ -197,7 +215,7 @@ h4 a {
 footer, footer a { 
     font-size: 15px;   
     margin-bottom: 30px;
-    color: #060966;
+    color: black;
 }
 
 #aboutMe {
@@ -286,8 +304,10 @@ footer, footer a {
     transition: all 100ms ease-out 0ms;
   }
 
+ /* NAVBAR */ 
+
 .navbar a {
-  color: #060966 !important;
+  color: black !important;
 }
  
 .navbar-toggler:focus,
@@ -352,7 +372,7 @@ footer, footer a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #060966;
+    background: #111;
     width: 50px;
     height: 50px;
     display: block;
@@ -381,9 +401,9 @@ footer, footer a {
     transition: all 0.3s ease;
   }
   #return-to-top:hover {
-    background: lavender;
+    background: red;
   }
   #return-to-top:hover i {
-    color: #060966;
+    color: white;
     top: 5px;
   }
