@@ -1,0 +1,74 @@
+p {
+    font-family: "Gill Sans", sans-serif;
+    padding: 1em;
+    line-height: 30px;
+    color: #68939c;
+    position: absolute;
+    left: -90%;
+    text-align: center;
+}
+.lyrics {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+@import "https://fonts.googleapis.com/css?family=Dosis";
+/* VARS */
+/* MIXINS */
+/* ANIMATIONS */
+@-webkit-keyframes intermittente {
+75% {
+    opacity: 0.7;
+}
+}
+@keyframes intermittente {
+75% {
+    opacity: 0.7;
+}
+}
+body {
+background-color: #1A1A1B;
+}
+
+.btn {
+/* margin-bottom: 0;
+vertical-align: middle; */
+touch-action: manipulation;
+cursor: pointer;
+background-color: transparent;
+background-image: none;
+background-repeat: no-repeat;
+background-position: 18px center;
+border: 1px solid #cb3535;
+white-space: nowrap;
+outline: none;
+color: #68939c;
+font-size: 16px;
+line-height: 24px;
+font-size: 1.6rem;
+line-height: 2.4rem;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 2px;
+font-weight: 300;
+width: auto;
+/* white-space: pre-wrap; */
+padding: 10px 1.8em;
+transition: all 0.3s ease;
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+font-family: 'Dosis', sans-serif;
+-webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, -50%, 0);
+}
+@media (min-width: 480px) {
+.btn {
+    width: auto;
+}
+}
+.btn:hover {
+-webkit-animation: intermittente 0.01s infinite alternate;
+        animation: intermittente 0.01s infinite alternate;
+box-shadow: 0px 0px 35px rgba(204, 0, 0, 0.3), 0 0 11px rgba(204, 0, 0, 0.3), 0 0 2px rgba(255, 0, 0, 0.3), 0 0 1px rgba(204, 0, 0, 0.3), 0 0px 17px rgba(204, 0, 0, 0.3), inset 0px 0 17px rgba(204, 0, 0, 0.3), inset 0px 0 30px rgba(204, 0, 0, 0.3);
+}
