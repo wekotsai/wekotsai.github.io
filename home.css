@@ -134,9 +134,19 @@ h4 a:hover {
     text-decoration-style: wavy;
 }
 
-h6 {
-  padding-left: 3em;
-  padding-right: 3em;
+.bio {
+  max-width: 700px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em; 
+  line-height: 1.5em;
+}
+@media screen and (max-width: 600px) {
+  .bio {
+  padding: 3em;
+  }
 }
 
 footer { 
