@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 *, *:after, *:before {
   box-sizing: border-box;
@@ -15,11 +14,7 @@ html {
   background-color: #111;
 }
 
-#web-dev{
-  background-color: rgba(245, 245, 245, 0.7)
-}
-
-#aboutMe{
+#webDev, #fashion{
   background-color: rgba(245, 245, 245, 0.7)
 }
 
@@ -55,6 +50,11 @@ html {
   }
 }
 
+h2 {
+  font-family: 'Bebas Neue', sans-serif !important;
+  font-size: 2.5em;
+}
+
 .white-mode {
 	text-decoration: none;
 	padding: 7px 10px;
@@ -72,8 +72,6 @@ html {
 	background-color: #FFF;
 	color: #122;
 }
-
-/* END OF INTRO */
 
 body {
     background-color: white;
@@ -99,7 +97,7 @@ li > a:before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #f537cc;
+    background: #e22b94;
     visibility: hidden;
     border-radius: 5px;
     transform: scaleX(0);
@@ -112,30 +110,23 @@ li > a:focus:before {
   } 
 
 .icon c span:hover {
-    color: #f537cc !important;
+    color: #e22b94 !important;
   }  
 
 h4 {
     font-family: "Montserrat";
     text-align: center;
-    color: turquoise;
     font-size: 18px; 
 }
 
-h4 a {
-    color: turquoise;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-}
-
 h4 a:hover {
-    color: #f537cc;
+    color: #e22b94;
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
 
 .bio {
-  max-width: 700px;
+  max-width: 800px;
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -145,9 +136,16 @@ h4 a:hover {
 }
 @media screen and (max-width: 600px) {
   .bio {
-  padding: 3em;
+    padding: 2.5em;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .gif {
+    display: none;
+  }
+}
+
 
 footer { 
     font-size: 15px;   
@@ -159,16 +157,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 3em;
+    padding-top: 5em;
   }
 
-#back-end-portfolio {
+#design-portfolio {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }  
   .one-tile {
     position: relative;
@@ -178,19 +176,20 @@ footer {
   
   @media screen and (min-width: 500px) {
     .one-tile {
-    width: 60%;
+      width: 60%;
     }
   }
   
-  .one-tile:hover .img-back-end-portfolio {
+  .one-tile:hover .img-design-portfolio {
     transform: scale(1.1);
     filter: brightness(30%);
   }
   
-  .img-back-end-portfolio {
+  .img-design-portfolio {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 3em;
     width: 100%;
     height: auto;
     transform: scale(1.01); 
@@ -298,7 +297,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #f537cc;
+    background: rgb(255,255,255, 0.7);
     width: 50px;
     height: 50px;
     display: block;
@@ -330,16 +329,15 @@ footer {
     background: #111;
   }
   #return-to-top:hover i {
-    color: #f537cc;
+    color: #fff;
     top: 5px;
   }
 
-  /* TYPEWRITER */
   .typewriter h3 {
     color: #fff;
     font-family: "Montserrat";
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #f537cc; /* The typwriter cursor */
+    border-right: .15em solid #e22b94; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -347,22 +345,20 @@ footer {
       typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
-  
-  /* The typing effect */
+
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-  
-  /* The typewriter cursor effect */
+
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #f537cc }
+    50% { border-color: #f4b2c7 }
   }
 
   .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
     padding-top: 25px;
     height: 0;
 }
@@ -372,4 +368,68 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.container {
+  width: 25vw;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+.accordion {
+  background-color: transparent;
+  overflow: hidden;
+}
+.accordion.active .accordion__intro::before {
+  transform: rotate(90deg);
+}
+.accordion.active .accordion__intro::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+.accordion.active .accordion__content {
+  padding-bottom: 20px;
+}
+.accordion__intro {
+  padding: 20px 40px;
+  cursor: pointer;
+  position: relative;
+}
+.accordion__intro h4 {
+  color:#0f0f0f;
+  margin: 0;
+}
+.accordion__intro p {
+  color: #0f0f0f;
+  font-size: 15px;
+}
+.accordion__intro::before, .accordion__intro::after {
+  content: '';
+  position: absolute;
+  left: 17%;
+  top: 20px;
+  height: 18px;
+  width: 3px;
+  transition: .2s ease-out;
+  background-color: #f4b2c7;
+}
+.accordion__intro::after {
+  transform: rotate(-90deg);
+}
+.accordion__content {
+  padding: 0 40px;
+  max-height: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: max-height .2s ease-out;
+  color: #0f0f0f;;
+}
+
+.accordion__content ul {
+  list-style-type: none
 }

@@ -77,6 +77,16 @@ window.onload = function(){
   document.querySelector('.restart').onclick = function() {tl.restart()};
 }
 
-
-
+const intros = document.querySelectorAll('.accordion__intro');
+intros.forEach(intro => {
+	intro.onclick = () => {
+				intro.parentNode.classList.toggle('active');
+				const content = intro.nextElementSibling;
+				if (content && content.style.maxHeight) {
+						content.style.maxHeight = null;
+				} else {
+						content.style.maxHeight = content.scrollHeight + 'px';
+				}
+		};
+});
 
