@@ -411,7 +411,7 @@ footer {
 .accordion__intro::before, .accordion__intro::after {
   content: '';
   position: absolute;
-  left: 17%;
+  left: 15%;
   top: 20px;
   height: 18px;
   width: 3px;
@@ -428,6 +428,7 @@ footer {
   will-change: max-height;
   transition: max-height .2s ease-out;
   color: #0f0f0f;;
+  line-height: 2em;
 }
 
 .accordion__content ul {
